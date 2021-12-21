@@ -20,6 +20,7 @@ struct CreateView: View{
                 }
             }.navigationTitle("Create")
                 .navigationBarBackButtonHidden(true)
+            padding(.bottom, 15)
         }
     }
 }
