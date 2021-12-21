@@ -16,6 +16,20 @@ struct LandingView: View {
                         )
                     )
                 Spacer()
+                Button(action:{}){
+                    HStack(spacing: 15){
+                        Spacer()
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 24))
+                            .foregroundColor(.white)
+                        Text("Create a challenge")
+                            .font(.system(size: 24, weight: .semibold))
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                }
+                .padding(.horizontal, 15)
+                .buttonStyle(PrimaryButtonStyle())
             }
             .frame(
                 maxWidth: .infinity,
@@ -25,9 +39,12 @@ struct LandingView: View {
                 Image("pushup")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .overlay(Color.black.opacity(0.4))
+                    .frame(width: proxy.size.width)
+                    .edgesIgnoringSafeArea(.all)
                     
             )
-            .edgesIgnoringSafeArea(.all)
+            
         }
     }
 }
