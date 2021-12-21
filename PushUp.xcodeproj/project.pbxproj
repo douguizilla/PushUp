@@ -10,6 +10,8 @@
 		8DA256A92771F80D0016FABD /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256A82771F80D0016FABD /* CreateView.swift */; };
 		8DA256AB2771F88A0016FABD /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256AA2771F88A0016FABD /* DropdownView.swift */; };
 		8DA256AD277200670016FABD /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256AC277200670016FABD /* RemindView.swift */; };
+		8DA256B027720CF40016FABD /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256AF27720CF40016FABD /* CreateChallengeViewModel.swift */; };
+		8DA256B227720DD60016FABD /* DropdownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256B127720DD60016FABD /* DropdownItemProtocol.swift */; };
 		8DE3145727712F5F002D232F /* PushUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3145627712F5F002D232F /* PushUpApp.swift */; };
 		8DE3145927712F5F002D232F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3145827712F5F002D232F /* LandingView.swift */; };
 		8DE3145B27712F61002D232F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3145A27712F61002D232F /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		8DA256A82771F80D0016FABD /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		8DA256AA2771F88A0016FABD /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		8DA256AC277200670016FABD /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
+		8DA256AF27720CF40016FABD /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
+		8DA256B127720DD60016FABD /* DropdownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownItemProtocol.swift; sourceTree = "<group>"; };
 		8DE3145327712F5F002D232F /* PushUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE3145627712F5F002D232F /* PushUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpApp.swift; sourceTree = "<group>"; };
 		8DE3145827712F5F002D232F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DA256AE27720CC50016FABD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8DA256AF27720CF40016FABD /* CreateChallengeViewModel.swift */,
+				8DA256B127720DD60016FABD /* DropdownItemProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		8DE3144A27712F5F002D232F = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 		8DE3145527712F5F002D232F /* PushUp */ = {
 			isa = PBXGroup;
 			children = (
+				8DA256AE27720CC50016FABD /* ViewModels */,
 				8DE3145627712F5F002D232F /* PushUpApp.swift */,
 				8DE3145827712F5F002D232F /* LandingView.swift */,
 				8DE3145A27712F61002D232F /* Assets.xcassets */,
@@ -155,7 +169,9 @@
 				8DE31465277138EF002D232F /* PrimaryButtonStyle.swift in Sources */,
 				8DE3145927712F5F002D232F /* LandingView.swift in Sources */,
 				8DE3145727712F5F002D232F /* PushUpApp.swift in Sources */,
+				8DA256B227720DD60016FABD /* DropdownItemProtocol.swift in Sources */,
 				8DE3146727713A30002D232F /* Color+Extension.swift in Sources */,
+				8DA256B027720CF40016FABD /* CreateChallengeViewModel.swift in Sources */,
 				8DA256AD277200670016FABD /* RemindView.swift in Sources */,
 				8DA256A92771F80D0016FABD /* CreateView.swift in Sources */,
 				8DA256AB2771F88A0016FABD /* DropdownView.swift in Sources */,

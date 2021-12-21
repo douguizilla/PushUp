@@ -19,6 +19,7 @@ struct RemindView :  View {
                     .font(.system(size: 24, weight: .medium))
                     .foregroundColor(.primary)
             }
+            .padding(.bottom, 15)
             
             
         }.navigationTitle("Remind")
