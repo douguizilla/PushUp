@@ -1,4 +1,7 @@
 import SwiftUI
+import Combine
+
+typealias UserId = String
 
 final class CreateChallengeViewModel : ObservableObject{
     @Published var dropdowns: [ChallengePartViewModel] = [
@@ -10,6 +13,7 @@ final class CreateChallengeViewModel : ObservableObject{
     
     enum Action {
         case selectOption(index: Int)
+        case createChallenge
     }
     
     var hasSelectedDropdown : Bool {
@@ -32,6 +36,9 @@ final class CreateChallengeViewModel : ObservableObject{
             clearSelectedOptions()
             dropdowns[selectedDropdownIndex].options[index].isSelected = true
             clearSelectedDropdown()
+            
+        case .createChallenge:
+            print("create challenge")
         }
     }
     
@@ -45,6 +52,10 @@ final class CreateChallengeViewModel : ObservableObject{
     func clearSelectedDropdown(){
         guard let selectedDropdownIndex = selectedDropdownIndex else { return }
         dropdowns[selectedDropdownIndex].isSelected = false
+    }
+    
+    private func currentUserId() -> AnyPublisher<UserId, Error>{
+        return Just("").setFailureType(to: Error.self).eraseToAnyPublisher()
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122C01F7FE3DE062FEB45A98 /* Pods_PushUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62A9B7C11FEED908A5E763B /* Pods_PushUp.framework */; };
 		8DA256A92771F80D0016FABD /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256A82771F80D0016FABD /* CreateView.swift */; };
 		8DA256AB2771F88A0016FABD /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256AA2771F88A0016FABD /* DropdownView.swift */; };
 		8DA256AD277200670016FABD /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA256AC277200670016FABD /* RemindView.swift */; };
@@ -18,9 +19,12 @@
 		8DE3145E27712F61002D232F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3145D27712F61002D232F /* Preview Assets.xcassets */; };
 		8DE31465277138EF002D232F /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE31464277138EF002D232F /* PrimaryButtonStyle.swift */; };
 		8DE3146727713A30002D232F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3146627713A30002D232F /* Color+Extension.swift */; };
+		8DE94967277255E30075FD97 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94966277255E20075FD97 /* UserService.swift */; };
+		8DE94969277257990075FD97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94968277257990075FD97 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102A862614F2A13A025B97D9 /* Pods-PushUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushUp.release.xcconfig"; path = "Target Support Files/Pods-PushUp/Pods-PushUp.release.xcconfig"; sourceTree = "<group>"; };
 		8DA256A82771F80D0016FABD /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		8DA256AA2771F88A0016FABD /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		8DA256AC277200670016FABD /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,10 @@
 		8DE3145D27712F61002D232F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DE31464277138EF002D232F /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		8DE3146627713A30002D232F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		8DE94966277255E20075FD97 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8DE94968277257990075FD97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C62A9B7C11FEED908A5E763B /* Pods_PushUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF129CDA48D7ACFCB3B1746 /* Pods-PushUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushUp.debug.xcconfig"; path = "Target Support Files/Pods-PushUp/Pods-PushUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122C01F7FE3DE062FEB45A98 /* Pods_PushUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,8 @@
 			children = (
 				8DE3145527712F5F002D232F /* PushUp */,
 				8DE3145427712F5F002D232F /* Products */,
+				FBAE632D9CCCF79170B3E9F2 /* Pods */,
+				FF2F7FF1C0B209E160E21A82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +85,8 @@
 		8DE3145527712F5F002D232F /* PushUp */ = {
 			isa = PBXGroup;
 			children = (
+				8DE94968277257990075FD97 /* GoogleService-Info.plist */,
+				8DE94965277255BE0075FD97 /* Services */,
 				8DA256AE27720CC50016FABD /* ViewModels */,
 				8DE3145627712F5F002D232F /* PushUpApp.swift */,
 				8DE3145827712F5F002D232F /* LandingView.swift */,
@@ -96,6 +109,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8DE94965277255BE0075FD97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94966277255E20075FD97 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBAE632D9CCCF79170B3E9F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEF129CDA48D7ACFCB3B1746 /* Pods-PushUp.debug.xcconfig */,
+				102A862614F2A13A025B97D9 /* Pods-PushUp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF2F7FF1C0B209E160E21A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C62A9B7C11FEED908A5E763B /* Pods_PushUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DE3146127712F61002D232F /* Build configuration list for PBXNativeTarget "PushUp" */;
 			buildPhases = (
+				28A4DF930A8F50231834BEB3 /* [CP] Check Pods Manifest.lock */,
 				8DE3144F27712F5F002D232F /* Sources */,
 				8DE3145027712F5F002D232F /* Frameworks */,
 				8DE3145127712F5F002D232F /* Resources */,
+				51DD5D5A1285BEB6B745D75A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,10 +197,53 @@
 			files = (
 				8DE3145E27712F61002D232F /* Preview Assets.xcassets in Resources */,
 				8DE3145B27712F61002D232F /* Assets.xcassets in Resources */,
+				8DE94969277257990075FD97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A4DF930A8F50231834BEB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51DD5D5A1285BEB6B745D75A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushUp/Pods-PushUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushUp/Pods-PushUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushUp/Pods-PushUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DE3144F27712F5F002D232F /* Sources */ = {
@@ -172,6 +256,7 @@
 				8DA256B227720DD60016FABD /* DropdownItemProtocol.swift in Sources */,
 				8DE3146727713A30002D232F /* Color+Extension.swift in Sources */,
 				8DA256B027720CF40016FABD /* CreateChallengeViewModel.swift in Sources */,
+				8DE94967277255E30075FD97 /* UserService.swift in Sources */,
 				8DA256AD277200670016FABD /* RemindView.swift in Sources */,
 				8DA256A92771F80D0016FABD /* CreateView.swift in Sources */,
 				8DA256AB2771F88A0016FABD /* DropdownView.swift in Sources */,
@@ -299,6 +384,7 @@
 		};
 		8DE3146227712F61002D232F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF129CDA48D7ACFCB3B1746 /* Pods-PushUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +413,7 @@
 		};
 		8DE3146327712F61002D232F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102A862614F2A13A025B97D9 /* Pods-PushUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
