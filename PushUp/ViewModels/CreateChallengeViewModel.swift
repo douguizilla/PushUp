@@ -1,7 +1,7 @@
 import SwiftUI
 
 final class CreateChallengeViewModel : ObservableObject{
-    @Published private(set) var dropdowns: [ChallengePartViewModel] = [
+    @Published var dropdowns: [ChallengePartViewModel] = [
         .init(type: .exercise),
         .init(type: .startAmout),
         .init(type: .increase),

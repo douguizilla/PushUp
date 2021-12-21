@@ -5,7 +5,7 @@ struct RemindView :  View {
     var body : some View {
         VStack{
             Spacer()
-            DropdownView()
+            //DropdownView()
             Spacer()
             Button(action: {}){
                 Text("Create")
