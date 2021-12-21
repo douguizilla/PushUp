@@ -6,6 +6,10 @@ target 'PushUp' do
   use_frameworks!
 
   # Pods for PushUp
-	# Add the Firebase pod for Google Analytics	pod 'Firebase/Analytics'	pod 'Firebase/Auth'	pod 'Firebase/Firestore'
+	# Add the Firebase pod for Google Analytics
+  pod 'Firebase'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
 	pod 'FirebaseFirestoreSwift'
 end
