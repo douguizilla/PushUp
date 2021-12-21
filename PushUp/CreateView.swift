@@ -29,7 +29,7 @@ struct CreateView: View{
                 dropdownList
                 Spacer()
                     Button(action: {
-                        viewModel.send(action: .createChallege)
+                        viewModel.send(.createChallenge)
                     }){
                         Text("Create")
                             .font(.system(size: 24, weight: .medium))
