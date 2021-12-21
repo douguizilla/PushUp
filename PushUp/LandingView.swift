@@ -9,7 +9,7 @@ struct LandingView: View {
                 VStack{
                     Spacer()
                         .frame(
-                            height: proxy.size.height * 0.2
+                            height: proxy.size.height * 0.08
                         )
                     Text("PushUp")
                         .font(
