@@ -20,7 +20,7 @@ struct DropdownView: View {
                         .font(.system(size: 24, weight: .medium))
                 }
             }.buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
-        }.padding(20)
+        }.padding(15)
     }
 }
 
