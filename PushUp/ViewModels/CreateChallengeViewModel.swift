@@ -93,7 +93,7 @@ extension CreateChallengeViewModel {
             
             var toDropdownOption: DropdownOption {
                 .init(type: .number(rawValue),
-                      formattedValue: "+\(rawValue)",
+                      formattedValue: "\(rawValue) days",
                       isSelected: self == .seven
                 )
             }
